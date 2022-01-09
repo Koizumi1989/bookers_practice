@@ -13,9 +13,9 @@
     <tr>
       <td><%= b.title %></td>
       <td><%= b.body %></td>
-      <td><%= link_to 'Show',"books_show_path(b.id.to_s)" %></td>
-      <td><%= link_to 'Edit',"edit_books_path(:id)" %></td>
-      <td><%= link_to 'Destroy',books_path(:id),method: :delete %></td>
+      <td><%= link_to 'Show',show_book_path(b.id) %></td>
+      <td><%= link_to 'Edit',edit_book_path(b.id) %></td>
+      <td><%= link_to "Destroy", destroy_book_path(b.id), method: :delete, "data-confirm" => "本当に削除しますか？" %></td>
     </tr>
     <% end %>
   </tbody>
