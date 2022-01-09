@@ -1,5 +1,5 @@
 <%= stylesheet_link_tag "books", :media => "all" %>
-<h1 class = "index_html">Books</h1>
+<h2 class = "index_html">Books</h2>
 <table class = "index_html">
   <thead>
     <tr>
@@ -22,7 +22,7 @@
 </table>
 
 <div class ="index_html_newbook">
-  <h2>New Book</h2>
+  <h3>New Book</h3>
 
   <%= form_with model: @book,url:'/books',method: :post, local:true do |f| %>
   <p>Title</p>

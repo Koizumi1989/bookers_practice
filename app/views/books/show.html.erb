@@ -1,7 +1,9 @@
 <%= stylesheet_link_tag "books", :media => "all" %>
-<p><strong>Title:</strong><%= @book.title %></p>
-<p><strong>Body:</strong><%= @book.body %></p>
+<p class = "show_html"><strong>Title: </strong><%= @book.title %></p>
+<p class = "show_html"><strong>Body: </strong><%= @book.body %></p>
 
+<div class = "show_span">
 <span><%= link_to 'Edit',edit_book_path(@book.id) %></span>
 <span>|</span>
 <span><%= link_to 'Back','/books' %></span>
+</div>
