@@ -1,0 +1,18 @@
+<%= stylesheet_link_tag "books", :media => "all" %>
+
+<h2>Editing Book</h2>
+
+<%= form_with model: @book,url:'/books/:id',method: :patch, local:true do |f| %>
+
+<p class = "edit_html">Title</p>
+<%= f.text_field :title %>
+
+<p class = "edit_html">Body</p>
+<%= f.text_area :body %>
+<br>
+<%= f.submit 'Update Book' %>
+<% end %>
+
+<span><%= link_to 'Show',"show_books_path(:id)" %></span>
+<span>|</span>
+<span><%= link_to 'Back','/books' %></span>

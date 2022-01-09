@@ -1,0 +1,7 @@
+<%= stylesheet_link_tag "books", :media => "all" %>
+<p><strong>Title:</strong><%= @book.title %></p>
+<p><strong>Body:</strong><%= @book.body %></p>
+
+<span><%= link_to 'Edit',"edit_books_path(:id)" %></span>
+<span>|</span>
+<span><%= link_to 'Back','/books' %></span>
