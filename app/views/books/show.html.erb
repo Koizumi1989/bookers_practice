@@ -1,4 +1,5 @@
 <%= stylesheet_link_tag "books", :media => "all" %>
+<p class = "show_html_flash"><%= flash[:notice] %></p><br>
 <p class = "show_html"><strong>Title: </strong><%= @book.title %></p>
 <p class = "show_html"><strong>Body: </strong><%= @book.body %></p>
 
